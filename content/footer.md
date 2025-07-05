@@ -1,0 +1,1 @@
+&copy; **2025 Berufskolleg Kaufmännische Schulen des Kreises Düren**

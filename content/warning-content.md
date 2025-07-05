@@ -1,0 +1,1 @@
+## Dies ist eine Warnung: die Schule wird geräumt!

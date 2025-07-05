@@ -1,0 +1,380 @@
+/*  -----------------------------------------        */
+/*  Übergreifend / Body / DIV-Bereiche               */
+/*  -----------------------------------------        */
+html, body {
+ background-image:url("");
+ background-repeat:no-repeat; 
+ background-size: cover;      
+ overflow:hidden;             
+ font-size:13pt;
+ font-family: 'Montserrat', sans-serif;        ! Festlegung der Schriftart;
+ background-color:rgb(255, 255, 255);
+}
+
+#kopfbereich {
+
+  position:fixed;            ! Position des Kopfbereichs ist immer oben - FIX!;
+  top:0;                     ! Position oben;
+  left:0;                    ! Position ganz links;
+  border-bottom: 4px solid #ccc;    ! Rahmenart und -farbe;
+  background-color:rgba(255,255,255,1); 
+  background-color:rgba(145,184,179,1);
+  width:100%;                ! Breite des Kopfbereichs;
+  height:100px;              ! Höhe des Kopfbereichs;
+  z-index:2;                 ! Kopfbereich überlagert andere Bereiche;
+  text-align:center;
+  padding-top:0;
+  padding-right:250px;
+  padding-left:250px;
+}
+
+#logo {
+  position:fixed;            ! Position des Kopfbereichs ist immer oben - FIX!;
+  top:0;                     ! Position oben;
+  left:0;                    ! Position ganz links;
+  background-color:rgba(145,184,179,1);
+  width:350px;                ! Breite des Kopfbereichs;
+  height:90px;              ! Höhe des Kopfbereichs;
+  z-index:12;                 ! Kopfbereich überlagert andere Bereiche;
+ }
+
+#clock {
+
+  position:fixed;            ! Position des Kopfbereichs ist immer oben - FIX!;
+  top:0;                     ! Position oben;
+  right:0;                    ! Position ganz links;
+  background-color:rgba(145,184,179,1);
+  width:350px;                ! Breite des Kopfbereichs;
+  height:80px;              ! Höhe des Kopfbereichs;
+  z-index:6;                 ! Kopfbereich überlagert andere Bereiche;
+  text-align:right;
+  padding-top:22px;
+  
+}
+#rss-feed {
+
+  position:fixed;            ! Position des Kopfbereichs ist immer oben - FIX!;
+  top:150px;                     ! Position oben;
+  background-color:rgba(145,184,179,0);
+  z-index:10;                 ! Kopfbereich überlagert andere Bereiche;
+}
+
+#warnungsbereich {
+
+  position:fixed;            ! Position des Kopfbereichs ist immer oben - FIX!;
+  top:80px;                     ! Position oben;
+  left:0;                    ! Position ganz links;
+  background-color:rgba(255,255,255,1);
+  width:100%;                ! Breite des Kopfbereichs;
+  height:80px;              ! Höhe des Kopfbereichs;
+  z-index:100;                 ! Kopfbereich überlagert andere Bereiche;
+  padding:0;
+  }
+
+#textbereich {
+
+  position:fixed;            ! Position des Textbereichs immer in der Mitte!;
+  left:0;                    ! Textbereich fängt ganz links an;
+  right:0;                   ! Textbereich geht bis ganz rechts;
+  top:100px;                 ! Außenabstand zum Kopfbereich;
+  padding-left:10px;        ! Innenabstand zum Menü;
+  padding-right:10px;       ! Innenabstand zum Newsbereich;
+  padding-top:10px;          ! Innenabstand nach oben;
+  padding-bottom:40px;       ! Innenabstand nach unten;
+  border: 1px solid #ccc;    ! Rahmenart und -farbe;
+  height:100%;               ! Höhe des Textbereiches auf 100% eingestellt;
+  overflow-y: auto;          ! Zeige Scrollbalken rechts, falls notwendig;
+  background-color:rgba(255,255,255,0.85); ! Hintergrund ist weiß mit 50 %iger Transparenz;
+  overflow:hidden;
+}
+
+.autoscroll {
+overflow-y: auto;
+}
+
+#fussbereich {
+
+ position:fixed;              ! Position des Fußbereichs immer unten!;
+ bottom:0;                    ! Unten ausgerichtet!;
+ left:0;                      ! Position ganz links;
+ border-top: 4px solid #ccc;      ! Rahmenart und -farbe;
+ width: 100%;                 ! Breite des Fussbereichs;
+ background-color:rgba(255,255,255,1);
+ background-color:rgba(145,184,179,1);
+ height:40px;                 ! Höhe des Fußbereichs;
+ z-index:2;                   ! Fußbereich überlagert andere Bereiche;  
+ text-align:center;            ! Text wird im Fussbereich zentriert;
+ padding:1px;                ! Innenabstand einheitlich bei;
+ margin:0;
+ line-height:2px;
+} 
+
+/*  Höhe des Contentbereichs festlegen (wichtig!)    */                    
+.content-block {
+  padding-bottom: 600px;
+}
+/*  ----------------------------------------- */
+/*  Schriftformatierung                       */
+/*  ----------------------------------------- */
+
+p {
+font-style:normal;                                                 ! Festlegung des Schrifttyps;
+font-weight:normal;                                                ! Festlegung der Fettschrift;
+color:#000000;                                                     ! Festlegung des Schriftfarbe;
+}
+.title {
+font-stretch:wider;                                                ! Festlegung der Schriftweite;
+font-size:130%;                                                    ! Festlegung des Schriftgröße;
+font-weight:bold;                                                  ! Festlegung der Fettschrift;
+}
+
+.header-title {
+font-stretch:ultra-expanded;
+font-size:120%;
+font-weight:bold;
+text-align:center;
+margin-top:10px;
+color: rgb(0,0,0);
+}
+
+.footer-text {
+font-stretch:wider;              ! Festlegung der Schriftweite;
+font-size:80%;                  ! Festlegung des Schriftgröße;
+font-weight:bold;                ! Festlegung der Fettschrift;
+color: rgb(0,0,0);	       ! Festlegung der Schriftfarbe (hier weiß);
+}
+
+.footer-text > a:hover {
+
+  font-weight:700;	! Festlegung der Fettschrift für Montserrat, ansonsten bold einstellen;
+  font-style:oblique;	! Festlegung der Kursiv-Schrift;
+  color: rgba(255,215,0,1);	! Festlegung des Schriftfarbe (gold);
+}
+/*  ----------------------------------------- */
+/*  Bilder einbinden                          */
+/*  ----------------------------------------- */
+.header-image {
+  content:url("media/Logo_BKSD_trans.png");
+  max-width:250px;
+  margin:1px;
+  margin-left:10px;
+}
+
+video {
+  width:100%;
+  max-width:600px;
+}
+
+iframe {
+  width:100%;
+  max-width:700px;
+  max-height:500px;
+}
+
+
+/* --------------------  */
+/* Bildergalerie (GRID)   */
+/* --------------------  */
+
+.gallery {
+  --size: 10em; /* control the size */
+  --gap: 1em;  /* control the gap */
+  --zoom: 1.5;   /* control the scale factor */
+
+  display: grid;
+  gap: var(--gap);
+  width: calc(3.5*var(--size) + 2*var(--gap));
+  aspect-ratio: 3; /* ratio between width and height */
+  grid-template-columns: repeat(3,auto);
+}
+.gallery figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.gallery figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);	
+  font-size:90%;
+  font-weight:bold;
+}
+
+.gallery figure:hover figcaption,
+.gallery figure:focus figcaption {
+  opacity: 1;
+}
+
+.gallery > figure img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: .35s linear;
+}
+
+.gallery figure:hover img,
+.gallery figure:focus img{
+  filter: grayscale(0);
+  width:  calc(var(--size)*var(--zoom));
+  height: calc(var(--size)*var(--zoom));
+}
+
+/*  ---------------------------   */
+/*  Ausrichtung von Objekten      */
+/*  ---------------------------   */
+
+.left {
+ float:left;
+}
+
+.right {
+ float:right;
+}
+
+/*  ---------------------------   */
+/*  Tabellenformatierung          */
+/*  ---------------------------   */
+table, th, td, caption {
+  border: thin solid #a0a0a0;
+  vertical-align: top;
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 5px;
+  margin: 10px;
+  table-layout: auto;
+  width: 100%;
+}
+th, td {
+  font-weight: normal;
+  text-align: left;
+}
+th, caption {
+  background-color: #f1f3f4;
+  font-weight: 700;
+}
+
+/* -----------------------------------------------------------------------------*/
+/* Formatierung der Listen für News, Kollegium, Suche, Termine, BG, Kurse, Koop */
+/* -----------------------------------------------------------------------------*/
+
+#news {
+  padding-left:10px;        ! Innenabstand zum Menü;
+  padding-right:10px;       ! Innenabstand zum Newsbereich;
+  padding-top:10px;          ! Innenabstand nach oben;
+  padding-bottom:10px;       ! Innenabstand nach unten;
+}
+
+.post {
+  font-size-adjust:none;
+  background-color: rgba(145, 184, 179,0.7);
+  display: inline-block;
+  width: 95%;
+  font-weight:bold;
+  line-height:25px;
+  padding: 10px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:5px;
+  border-radius: 3px;
+  color:rgba(0,0,0,1);
+}
+
+.code-badge {
+  border-radius: 0px !important;
+  padding: 0px !important;
+  background: yellow !important;
+  color: white !important;
+  font-size: 15px !important;
+  padding-left: 10px !important;
+  text-transform: uppercase;
+  padding-top: 3px !important;
+}
+
+pre {
+ font-family: 'Open Sans', sans-serif;
+ font-style:normal;                                                 ! Festlegung des Schrifttyps;
+ font-weight:normal;                                                ! Festlegung der Fettschrift;
+ color:#000000;
+ white-space: pre-line;
+}
+/* -----------------------------------------------------------------------------*/
+/*  Lauftext für die Warnung                                                    */
+/* -----------------------------------------------------------------------------*/
+.marquee {
+  max-width: 100vw; /* iOS braucht das */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 105%; /* die zusätzlichen 5% erzeugen einen verzögerten Start und vermeiden so ein Ruckeln auf langsamen Seiten */
+  animation: marquee 10s linear infinite;
+}
+
+/* Optional: mouseover (oder Tipp auf dem Touchscreen) pausiert die Laufschrift */
+.marquee span:hover {
+  animation-play-state: paused 
+}
+
+/* Make it move */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee {
+  color: #f35626;
+  font-size: 150%;
+  font-weight: bolder;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #f35626;
+  -webkit-animation: hue 60s infinite linear;
+}
+
+/* -----------------------------------------------------------------------------*/
+/*  Fading                                                                      */
+/* -----------------------------------------------------------------------------*/
+@keyframes fadeIn {
+  from { opacity: 0; height:0;}
+  to { opacity: 1; height:100%;}
+}
+@keyframes fadeOut {
+  from { opacity: 1; height:100%;}
+  to { opacity: 0; height:0;}
+}
+.fade-in {
+  position: absolute;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  z-index:2;
+  height:100%;
+  width:48%;
+  margin-left:5px;
+}
+.fade-out {
+  position: absolute;
+  animation-name: fadeOut;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  z-index:1;
+  height:0;
+  width:48%;
+  margin-left:5px;
+}
