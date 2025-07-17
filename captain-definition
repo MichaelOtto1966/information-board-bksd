@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+ "templateId": "node/22",
+  "templateOverride": {
+    "prepareCommands": [
+      "apk update", 
+       "apk add --no-cache python3 make g++ libc-dev jpeg-dev cairo-dev pango-dev giflib-dev librsvg-dev freetype-dev fontconfig-dev harfbuzz-dev",
+      "ln -sf /usr/bin/python3 /usr/bin/python"
+    ]
+  },
+  "variables": []
+}
